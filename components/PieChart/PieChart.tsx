@@ -12,7 +12,6 @@ type PieChartProps = {
 const PieChart = (props: PieChartProps) => {
   const { fillPercentage } = props;
 
-  // Define the degree circle rotation class with conditional coloring
   const degreeCircle2 = cn(
     'absolute top-0 h-1/2 w-full bg-gray-300  origin-[center_bottom] ',
     {
