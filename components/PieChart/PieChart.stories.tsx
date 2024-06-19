@@ -38,7 +38,7 @@ export const Full: Story = {
   },
 };
 
-export const Empy: Story = {
+export const Empty: Story = {
   args: {
     fillPercentage: 0,
   },
