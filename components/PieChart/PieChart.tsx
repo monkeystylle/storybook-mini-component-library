@@ -21,7 +21,10 @@ const PieChart = (props: PieChartProps) => {
   );
 
   return (
-    <div className="bg-gray-300 rounded-full relative overflow-hidden h-[192px] w-[192px] ">
+    <div
+      className="bg-gray-300 rounded-full relative overflow-hidden h-[192px] w-[192px]"
+      style={{ filter: 'drop-shadow( 2px 4px 8px hsl(0deg 0% 0% / 0.4))' }}
+    >
       <div className="absolute top-0 h-1/2 w-full bg-blue-600 origin-[center_bottom] " />
       <div
         className={degreeCircle2}

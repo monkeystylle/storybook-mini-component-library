@@ -24,7 +24,10 @@ const ProgressBar = (props: ProgressBarProps) => {
   ]);
 
   return (
-    <div className={barClass()}>
+    <div
+      className={barClass()}
+      style={{ filter: 'drop-shadow( 2px 4px 8px hsl(0deg 0% 0% / 0.15))' }}
+    >
       <div
         className={barProgressClass()}
         style={{ width: `${limitedFillPercentage}%` }}
