@@ -16,7 +16,7 @@ const SlimProgressBar = (props: SlimProgressbarProps) => {
   // Limit percentage to  100%
   const limitedFillPercentage = Math.min(fillPercentage, 100);
 
-  const barClass = cva(['w-full h-1  rounded-sm', `bg-gray-300`]);
+  const barClass = cva(['w-full h-2  rounded-sm', `bg-gray-300`]);
 
   const barProgressClass = cva([
     'h-full rounded-sm transition-all ease-linear',
