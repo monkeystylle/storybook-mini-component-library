@@ -10,7 +10,7 @@ interface AvatarProps extends React.ComponentPropsWithoutRef<'div'> {
   /**
    * size of the Avatar
    */
-  size: 'small' | 'medium' | 'large';
+  size?: 'small' | 'medium' | 'large';
   /**
    * sets the user avatar image
    */
@@ -47,7 +47,7 @@ const Avatar = (props: AvatarProps) => {
   return (
     <div className={cn(avatarContainer({ size }))}>
       {imageUrl ? (
-        <Image src={AvatarPic1} alt="avatar pic" fill />
+        <Image src={imageUrl} alt="avatar pic" fill />
       ) : (
         getFirstLetterFromString(userName)
       )}
